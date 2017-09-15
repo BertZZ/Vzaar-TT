@@ -12,17 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :Username %>
+    <%= form.label :"Username (required)" %>
     <%= form.text_field :Username, id: :user_Username %>
   </div>
 
   <div class="field">
-    <%= form.label :encrypted_password %>
+    <%= form.label :"Password (required)" %>
     <%= form.text_field :encrypted_password, id: :user_encrypted_password %>
   </div>
 
   <div class="field">
-    <%= form.label :Email_Address %>
+    <%= form.label :"Email_Address (required)" %>
     <%= form.text_field :Email_Address, id: :user_Email_Address %>
   </div>
 
@@ -42,12 +42,12 @@
   </div>
 
   <div class="field">
-    <%= form.label :county %>
+    <%= form.label :"State/County" %>
     <%= form.text_field :county, id: :user_county %>
   </div>
 
   <div class="field">
-    <%= form.label :postcode %>
+    <%= form.label :Postcode %>
     <%= form.text_field :postcode, id: :user_postcode %>
   </div>
 
