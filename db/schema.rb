@@ -16,12 +16,12 @@ ActiveRecord::Schema.define(version: 20170915134610) do
   enable_extension "plpgsql"
 
   create_table "users", force: :cascade do |t|
-    t.string "Username"
+    t.string "username"
     t.string "encrypted_password"
-    t.string "Email_Address"
-    t.string "Address_1"
-    t.string "Address_2"
-    t.string "Town"
+    t.string "email_Address"
+    t.string "address_1"
+    t.string "address_2"
+    t.string "town"
     t.string "county"
     t.string "postcode"
     t.datetime "created_at", null: false
