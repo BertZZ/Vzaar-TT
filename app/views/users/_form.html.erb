@@ -1,0 +1,57 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :"Username (required)" %>
+    <%= form.text_field :username, id: :user_username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :"Password (required)" %>
+    <%= form.password_field :password, id: :user_password%>
+  </div>
+
+  <div class="field">
+    <%= form.label :"Email_Address (required)" %>
+    <%= form.text_field :email, id: :user_email%>
+  </div>
+
+  <div class="field">
+    <%= form.label :Address_1 %>
+    <%= form.text_field :address_1, id: :user_address_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Address_2 %>
+    <%= form.text_field :address_2, id: :user_address_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Town %>
+    <%= form.text_field :town, id: :user_town %>
+  </div>
+
+  <div class="field">
+    <%= form.label :"State/County" %>
+    <%= form.text_field :county, id: :user_county %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Postcode %>
+    <%= form.text_field :postcode, id: :user_postcode %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
