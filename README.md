@@ -15,3 +15,18 @@ The form should allow each user to provide the following information:
 Once submitted, the user’s details should be saved to a database.
 After the user’s account has been created, send them an email welcoming them to the platform
 and confirming their username.
+
+## Approach
+
+The project was written in Ruby on Rails using Test Driven Development.
+
+## Quick Start Guide
+First clone this repo. Then:
+```
+bundle install
+bin/rails db:create
+bin/rails db:migrate
+
+bundle exec rspec # Run the tests to ensure it works
+bin/rails server # Start the server at localhost:3000
+```
