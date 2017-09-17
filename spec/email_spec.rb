@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "Confirmation Email" do
   scenario 'User gets an Email' do
     visit '/'
-    click_link("Sign Up")
+    click_link("here")
     fill_in 'user_username', with: 'BertZ'
     fill_in 'user_password', with: 'test1'
     fill_in 'user_email', with: 'test@example.com'
