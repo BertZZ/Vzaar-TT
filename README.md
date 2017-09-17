@@ -1,8 +1,6 @@
-# README
+# Vzaar Tech test
 
-## Vzaar Tech test
-
-### Specifications
+## Specifications
 
 Make a simple Rails application for accepting new user signups. No need to worry about
 handling logins and sessions. We just want a form, which users can complete to create an
