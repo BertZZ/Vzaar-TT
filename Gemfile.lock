@@ -66,6 +66,11 @@ GEM
     erubi (1.6.1)
     execjs (2.7.0)
     ffi (1.9.18)
+<<<<<<< e20508766b68eac65d3511e99df2da994a8e1309
+=======
+    figaro (1.1.1)
+      thor (~> 0.14)
+>>>>>>> Adds email functionality
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.6)
@@ -198,8 +203,15 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+<<<<<<< e20508766b68eac65d3511e99df2da994a8e1309
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+=======
+  figaro
+  jbuilder (~> 2.5)
+  listen (>= 3.0.5, < 3.2)
+  mail
+>>>>>>> Adds email functionality
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.4)

@@ -17,3 +17,9 @@
 /yarn-error.log
 
 .byebug_history
+<<<<<<< e20508766b68eac65d3511e99df2da994a8e1309
+=======
+
+# Ignore application configuration
+/config/application.yml
+>>>>>>> Adds email functionality
