@@ -28,24 +28,11 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-<<<<<<< HEAD
-<<<<<<< e20508766b68eac65d3511e99df2da994a8e1309
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
-      else
-=======
-=======
->>>>>>> da89b54f23186b953847ac9b90eedbeed806770b
         UserMailer.registration_confirmation(@user).deliver
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to @user, notice: 'User was successfully created. Thank you for signing up' }
         format.json { render :show, status: :created, location: @user }
       else
         flash[:error] = "Ooooppss, something went wrong!"
-        render 'new'
-<<<<<<< HEAD
->>>>>>> Adds email functionality
-=======
->>>>>>> da89b54f23186b953847ac9b90eedbeed806770b
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end

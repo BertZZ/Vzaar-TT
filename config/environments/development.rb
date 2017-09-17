@@ -51,31 +51,21 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-<<<<<<< HEAD
-<<<<<<< e20508766b68eac65d3511e99df2da994a8e1309
-=======
-=======
->>>>>>> da89b54f23186b953847ac9b90eedbeed806770b
 
-
-config.action_mailer.delivery_method = :sendmail
-# Defaults to:
-# config.action_mailer.sendmail_settings = {
-#   location: '/usr/sbin/sendmail',
-#   arguments: '-i'
-# }
-config.action_mailer.delivery_method = :smtp
-# SMTP settings for mailgun
-ActionMailer::Base.smtp_settings = {
-  :port           => 587,
-  :address        => "smtp.mailgun.org",
-  :domain         => ENV['domain'],
-  :user_name      => ENV['username'],
-  :password       => ENV['password'],
-  :authentication => :plain,
-}
-<<<<<<< HEAD
->>>>>>> Adds email functionality
-=======
->>>>>>> da89b54f23186b953847ac9b90eedbeed806770b
+  config.action_mailer.delivery_method = :sendmail
+  # Defaults to:
+  # config.action_mailer.sendmail_settings = {
+  #   location: '/usr/sbin/sendmail',
+  #   arguments: '-i'
+  # }
+  config.action_mailer.delivery_method = :smtp
+  # SMTP settings for mailgun
+  ActionMailer::Base.smtp_settings = {
+    :port           => 587,
+    :address        => "smtp.mailgun.org",
+    :domain         => ENV['domain'],
+    :user_name      => ENV['username'],
+    :password       => ENV['password'],
+    :authentication => :plain,
+  }
 end
